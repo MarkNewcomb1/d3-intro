@@ -30,3 +30,23 @@ svg.selectAll('rect')
         return d * 5
     })
     .attr('fill', '#7ED26D')
+
+    // create labels
+
+    svg.selectAll('text')
+        .data(data)
+        .enter()
+        .append('text')
+        .text((d) => {
+            return d
+        })
+        .attr('x', (d, index)=> {
+            return index * (chart_width / data.length) +
+            (chart_width / data.length - bar_padding) / 2
+        })
+        .attr('y', (d) => {
+            return chart_height - d * 5 + 15
+        })
+        .attr('font-size', 14)
+        .attr('fill', '#fff')
+        .attr('text-anchor', 'middle')
