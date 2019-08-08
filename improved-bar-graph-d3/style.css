@@ -1,8 +1,9 @@
 #chart{
-    width: 800px;
-    height: 400px;
+    width: 336px;
+    height: 119px;
     background-color: #f7f7f7;
     margin: 25px auto;
+    padding: 50px;
 }
 .bar{
     display: inline-block;
@@ -10,4 +11,7 @@
     height: 300px;
     background-color: #7ED26D;
     margin-right: 5px;
+}
+svg {
+    overflow: visible;
 }
