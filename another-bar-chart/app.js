@@ -61,7 +61,8 @@ d3.csv("bar.data.csv").then(function(data) {
     .attr("y", 6)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
-    .text("Value ($)");
+    .text("Value ($)")
+    .attr("fill", "#000")
 
   svg
     .selectAll("bar")
